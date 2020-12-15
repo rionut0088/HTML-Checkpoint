@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>GMDB</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script type="text/javascript" src="./index.js"></script>
+    </head>
+    <body>
+        <header class="navbar">
+            <section class="navbar-logo">
+                <a href="./index.html">GMDB</a>
+            </section>
+
+            <section class="navbar-links">
+                <ul>
+                    <li><a id="navbar-links-home" class="navbar-link active">Home</a></li>
+                    <li><a id="navbar-links-login" class="navbar-link">Login</a></li>
+                </ul>
+            </section>
+
+            <section class="navbar-search">
+                <form>
+                    <input class="simple-textbox" type="text" placeholder="Search">
+                    <input class="simple-button outline orange" type="button" value="Search">
+                </form>
+            </section>
+        </header>
+
+        <div id="movies-view" class="movies-view active">
+            <ul id="movies-view-movies">
+            </ul>
+        </div>
+
+        <div id="login-view" class="login-view">
+            <h1>Login</h1>
+            <form>
+                <label>Email:</label>
+                <input class="simple-textbox" type="text">
+                <label>Password:</label>
+                <input class="simple-textbox" type="password">
+                <button class="simple-button info" type="button">Login</button>
+            </form>
+        </div>
+
+        <div id="info-view" class="info-view">
+            <a id="info-view-back-home" class="alert warning" style="cursor: pointer;">Back to results</a>
+            <section class="info-view-movie">
+                <img id="info-view-movie-cover-art" src="" alt="" width="500" height="600">
+                <section>
+                    <h1 id="info-view-movie-name" class="info-view-movie-name"></h1>
+                    <h2 id="info-view-movie-released"></h2>
+                    <p id="info-view-movie-genres-and-cast"></p>
+                    <p id="info-view-movie-description"></p>
+                </section>
+            </section>
+            <section class="info-view-comment">
+                <form>
+                    <label>Leave a comment:</label>
+                    <input class="simple-textbox" type="text" required>
+                    <button class="simple-button info" type="button">Submit</button>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>
